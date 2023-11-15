@@ -1,6 +1,6 @@
-module sentinel_gin_sdk
+module github.com/nlbydcg/sentinel_gin_sdk
 
-go 1.17
+go 1.20
 
 require (
 	github.com/alibaba/sentinel-golang v1.0.4
