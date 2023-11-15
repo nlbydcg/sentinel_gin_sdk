@@ -4,7 +4,7 @@ import (
 	sentinelPlugin "github.com/alibaba/sentinel-golang/pkg/adapters/gin"
 )
 
-// 抽离展示出来该中间件方法
+// 抽离展示出来
 var SentinelMiddleware = sentinelPlugin.SentinelMiddleware
 var WithResourceExtractor = sentinelPlugin.WithResourceExtractor
 var WithBlockFallback = sentinelPlugin.WithBlockFallback
