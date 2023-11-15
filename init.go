@@ -1,4 +1,4 @@
-package sentinel_sdk
+package sentinel_gin_sdk
 
 import (
 	"errors"

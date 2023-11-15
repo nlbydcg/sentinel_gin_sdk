@@ -1,15 +1,17 @@
-package sentinel_sdk
+package sentinel_gin_sdk
 
 import (
 	sentinelFlow "github.com/alibaba/sentinel-golang/core/flow"
 	sentinelSystem "github.com/alibaba/sentinel-golang/core/system"
 )
 
+// / 规则文件
 type RulesConfig struct {
 	System []*sentinelSystem.Rule `json:"system" yaml:"system"` // 系统级限流
 	Rules  FlowRules              `json:"rules" yaml:"rules"`   // 某一接口限流策略
 }
 
+// 某一接口权限文件
 type FlowRule struct {
 	Resource string `yaml:"resource" json:"resource" binding:"required" form:"resource"`
 	FlowOptions
